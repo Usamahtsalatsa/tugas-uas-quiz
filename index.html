@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kuis Online Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Kuis Online</h1>
+    <p>Jawablah semua soal dengan benar.</p>
+
+    <form id="quizForm">
+
+      <div class="question">
+        <p>1. Kepanjangan dari HTML adalah?</p>
+        <label><input type="radio" name="q1" value="A"> Hyper Text Markup Language</label>
+        <label><input type="radio" name="q1" value="B"> High Text Machine Language</label>
+        <label><input type="radio" name="q1" value="C"> Hyperlink Text Mark Language</label>
+        <label><input type="radio" name="q1" value="D"> Home Tool Markup Language</label>
+      </div>
+
+      <div class="question">
+        <p>2. Bahasa pemrograman untuk web interaktif adalah?</p>
+        <label><input type="radio" name="q2" value="A"> HTML</label>
+        <label><input type="radio" name="q2" value="B"> CSS</label>
+        <label><input type="radio" name="q2" value="C"> JavaScript</label>
+        <label><input type="radio" name="q2" value="D"> PHP</label>
+      </div>
+
+      <div class="question">
+        <p>3. Fungsi CSS adalah?</p>
+        <label><input type="radio" name="q3" value="A"> Membuat database</label>
+        <label><input type="radio" name="q3" value="B"> Mengatur tampilan</label>
+        <label><input type="radio" name="q3" value="C"> Mengolah data</label>
+        <label><input type="radio" name="q3" value="D"> Menghubungkan server</label>
+      </div>
+
+      <div class="question">
+        <p>4. Tag untuk membuat paragraf adalah?</p>
+        <label><input type="radio" name="q4" value="A"> &lt;div&gt;</label>
+        <label><input type="radio" name="q4" value="B"> &lt;span&gt;</label>
+        <label><input type="radio" name="q4" value="C"> &lt;h1&gt;</label>
+        <label><input type="radio" name="q4" value="D"> &lt;p&gt;</label>
+      </div>
+
+      <div class="question">
+        <p>5. JavaScript dijalankan di?</p>
+        <label><input type="radio" name="q5" value="A"> Server saja</label>
+        <label><input type="radio" name="q5" value="B"> Browser</label>
+        <label><input type="radio" name="q5" value="C"> Database</label>
+        <label><input type="radio" name="q5" value="D"> Compiler</label>
+      </div>
+
+      <button type="button" id="submitBtn">Kirim Jawaban</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>Hasil Kuis</h2>
+      <p id="scoreText"></p>
+      <p id="statusText"></p>
+      <button id="resetBtn">Ulangi Kuis</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
